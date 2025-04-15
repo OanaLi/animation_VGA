@@ -1,0 +1,515 @@
+
+*** Running vivado
+    with args -log Nexys4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nexys4.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Nexys4.tcl -notrace
+Command: synth_design -top Nexys4 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8436 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 361.379 ; gain = 76.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Nexys4' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/Nexys4.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'VGA_animatie_pacman' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:41]
+INFO: [Synth 8-4471] merging register 'G_reg[3:0]' into 'R_reg[3:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1183]
+INFO: [Synth 8-4471] merging register 'B_reg[3:0]' into 'R_reg[3:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1184]
+WARNING: [Synth 8-6014] Unused sequential element G_reg was removed.  [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1183]
+WARNING: [Synth 8-6014] Unused sequential element B_reg was removed.  [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1184]
+INFO: [Synth 8-256] done synthesizing module 'VGA_animatie_pacman' (1#1) [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Nexys4' (2#1) [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/Nexys4.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 417.555 ; gain = 132.312
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 417.555 ; gain = 132.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 417.555 ; gain = 132.312
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/PSN/animatie_VGA/animatie_VGA.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/PSN/animatie_VGA/animatie_VGA.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/PSN/animatie_VGA/animatie_VGA.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys4_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Nexys4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 774.812 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 774.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 774.848 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 774.848 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 774.848 ; gain = 489.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 774.848 ; gain = 489.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 774.848 ; gain = 489.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'img_reg[16][39:0]' into 'img_reg[35][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[15][39:0]' into 'img_reg[36][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[14][39:0]' into 'img_reg[37][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[12][39:0]' into 'img_reg[39][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[10][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[9][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[8][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[7][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[6][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[5][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[4][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[3][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[2][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[1][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+INFO: [Synth 8-4471] merging register 'img_reg[0][39:0]' into 'img_reg[11][39:0]' [D:/PSN/animatie_VGA/animatie_VGA.srcs/sources_1/new/VGA_animatie_pacman.vhd:1108]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 774.848 ; gain = 489.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 25    
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  24 Input     40 Bit        Muxes := 16    
+	  24 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module VGA_animatie_pacman 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 25    
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  24 Input     40 Bit        Muxes := 16    
+	  24 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[38][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[34][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[33][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[32][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[31][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[30][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[23][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[22][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[21][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[20][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[19][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[18][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[17][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[35][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[36][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[37][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[13][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[38][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[34][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[33][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[32][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[19][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[18][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[17][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[35][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[36][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[37][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[13][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[38][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[34][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[17][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[35][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[36][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[37][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[13][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[38][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[35][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[36][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[37][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[13][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[38][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[36][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[37][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[13][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[38][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[37][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[13][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[38][33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[13][33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[38][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[13][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][26] )
+INFO: [Synth 8-3886] merging instance 'display/img_reg[25][25]' (FDE) to 'display/img_reg[25][24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][25] )
+INFO: [Synth 8-3886] merging instance 'display/img_reg[27][24]' (FDE) to 'display/img_reg[27][23]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[26][24]' (FDE) to 'display/img_reg[26][23]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[25][24]' (FDE) to 'display/img_reg[25][23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][24] )
+INFO: [Synth 8-3886] merging instance 'display/img_reg[26][23]' (FDE) to 'display/img_reg[26][22]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[24][23]' (FDE) to 'display/img_reg[24][22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][23] )
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][22]' (FDE) to 'display/img_reg[29][21]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[28][22]' (FDE) to 'display/img_reg[28][21]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[26][22]' (FDE) to 'display/img_reg[26][21]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[25][22]' (FDE) to 'display/img_reg[25][21]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[24][22]' (FDE) to 'display/img_reg[24][21]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[19][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[18][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[17][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][22] )
+INFO: [Synth 8-3886] merging instance 'display/img_reg[28][21]' (FDE) to 'display/img_reg[28][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[27][21]' (FDE) to 'display/img_reg[27][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[26][21]' (FDE) to 'display/img_reg[26][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[25][21]' (FDE) to 'display/img_reg[25][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[24][21]' (FDE) to 'display/img_reg[24][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[23][21]' (FDE) to 'display/img_reg[23][20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[19][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[18][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[17][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][21] )
+INFO: [Synth 8-3886] merging instance 'display/img_reg[30][20]' (FDE) to 'display/img_reg[30][19]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][20]' (FDE) to 'display/img_reg[29][19]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[27][20]' (FDE) to 'display/img_reg[27][19]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[26][20]' (FDE) to 'display/img_reg[26][19]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[24][20]' (FDE) to 'display/img_reg[24][19]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[23][20]' (FDE) to 'display/img_reg[23][19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[18][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[17][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][20] )
+INFO: [Synth 8-3886] merging instance 'display/img_reg[38][19]' (FDE) to 'display/img_reg[38][18]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[30][19]' (FDE) to 'display/img_reg[30][18]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][19]' (FDE) to 'display/img_reg[29][18]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[23][19]' (FDE) to 'display/img_reg[23][18]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[22][19]' (FDE) to 'display/img_reg[22][18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][19] )
+INFO: [Synth 8-3886] merging instance 'display/img_reg[31][18]' (FDE) to 'display/img_reg[31][17]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[23][18]' (FDE) to 'display/img_reg[23][17]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[22][18]' (FDE) to 'display/img_reg[22][17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[13][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[38][17] )
+INFO: [Synth 8-3886] merging instance 'display/img_reg[32][17]' (FDE) to 'display/img_reg[32][16]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[31][17]' (FDE) to 'display/img_reg[31][16]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[30][17]' (FDE) to 'display/img_reg[30][16]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][17]' (FDE) to 'display/img_reg[29][16]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[25][17]' (FDE) to 'display/img_reg[25][16]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[22][17]' (FDE) to 'display/img_reg[22][16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[13][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[39][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[11][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/img_reg[38][16] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'display/img_reg[33][16]' (FDE) to 'display/img_reg[33][15]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[32][16]' (FDE) to 'display/img_reg[32][15]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[30][16]' (FDE) to 'display/img_reg[30][15]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[27][16]' (FDE) to 'display/img_reg[27][15]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[23][16]' (FDE) to 'display/img_reg[23][15]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[22][16]' (FDE) to 'display/img_reg[22][15]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[21][16]' (FDE) to 'display/img_reg[21][15]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[33][15]' (FDE) to 'display/img_reg[33][14]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[32][15]' (FDE) to 'display/img_reg[32][14]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[31][15]' (FDE) to 'display/img_reg[31][14]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[30][15]' (FDE) to 'display/img_reg[30][14]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[26][15]' (FDE) to 'display/img_reg[26][14]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[24][15]' (FDE) to 'display/img_reg[24][14]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[22][15]' (FDE) to 'display/img_reg[22][14]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[21][15]' (FDE) to 'display/img_reg[21][14]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[31][14]' (FDE) to 'display/img_reg[31][13]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][14]' (FDE) to 'display/img_reg[29][13]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[21][14]' (FDE) to 'display/img_reg[21][13]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[20][14]' (FDE) to 'display/img_reg[20][13]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[30][13]' (FDE) to 'display/img_reg[30][12]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[25][13]' (FDE) to 'display/img_reg[25][12]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[22][13]' (FDE) to 'display/img_reg[22][12]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[21][13]' (FDE) to 'display/img_reg[21][12]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][10]' (FDE) to 'display/img_reg[29][9]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[28][9]' (FDE) to 'display/img_reg[28][8]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[25][9]' (FDE) to 'display/img_reg[25][8]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[24][9]' (FDE) to 'display/img_reg[24][8]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[23][9]' (FDE) to 'display/img_reg[23][8]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[27][8]' (FDE) to 'display/img_reg[27][7]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[26][8]' (FDE) to 'display/img_reg[26][7]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[28][7]' (FDE) to 'display/img_reg[28][6]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[24][7]' (FDE) to 'display/img_reg[24][6]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[23][7]' (FDE) to 'display/img_reg[23][6]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][5]' (FDE) to 'display/img_reg[29][4]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[25][5]' (FDE) to 'display/img_reg[25][4]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[24][3]' (FDE) to 'display/img_reg[24][2]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][2]' (FDE) to 'display/img_reg[29][1]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][39]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[28][39]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[27][39]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[26][39]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[25][39]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[24][39]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[31][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[30][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[28][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[27][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[26][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[25][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[24][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[23][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[22][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[21][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[20][38]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[33][37]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[32][37]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[31][37]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[30][37]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[29][37]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[28][37]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[27][37]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Synth 8-3886] merging instance 'display/img_reg[26][37]' (FDE) to 'display/img_reg[13][20]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:57 . Memory (MB): peak = 774.848 ; gain = 489.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:20 . Memory (MB): peak = 774.848 ; gain = 489.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:23 . Memory (MB): peak = 797.254 ; gain = 512.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:24 . Memory (MB): peak = 799.043 ; gain = 513.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:27 . Memory (MB): peak = 799.043 ; gain = 513.801
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:27 . Memory (MB): peak = 799.043 ; gain = 513.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:27 . Memory (MB): peak = 799.043 ; gain = 513.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:27 . Memory (MB): peak = 799.043 ; gain = 513.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:27 . Memory (MB): peak = 799.043 ; gain = 513.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:27 . Memory (MB): peak = 799.043 ; gain = 513.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    93|
+|3     |LUT1   |    26|
+|4     |LUT2   |   277|
+|5     |LUT3   |     6|
+|6     |LUT4   |    36|
+|7     |LUT5   |    90|
+|8     |LUT6   |    68|
+|9     |MUXF7  |    19|
+|10    |MUXF8  |     2|
+|11    |FDRE   |   247|
+|12    |IBUF   |     1|
+|13    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+--------------------+------+
+|      |Instance  |Module              |Cells |
++------+----------+--------------------+------+
+|1     |top       |                    |   881|
+|2     |  display |VGA_animatie_pacman |   864|
++------+----------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:27 . Memory (MB): peak = 799.043 ; gain = 513.801
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:05 . Memory (MB): peak = 799.043 ; gain = 156.508
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:28 . Memory (MB): peak = 799.043 ; gain = 513.801
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 114 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 799.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+235 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:34 . Memory (MB): peak = 799.043 ; gain = 513.801
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 799.043 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/PSN/animatie_VGA/animatie_VGA.runs/synth_1/Nexys4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Nexys4_utilization_synth.rpt -pb Nexys4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  1 19:14:44 2023...

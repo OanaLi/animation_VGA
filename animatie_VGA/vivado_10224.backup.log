@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 30 23:42:35 2023
+# Process ID: 10224
+# Current directory: D:/PSN/animatie_VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7808 D:\PSN\animatie_VGA\animatie_VGA.xpr
+# Log file: D:/PSN/animatie_VGA/vivado.log
+# Journal file: D:/PSN/animatie_VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/PSN/animatie_VGA/animatie_VGA.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 655.758 ; gain = 117.023
+update_compile_order -fileset sources_1
+resetINFO: [Commonlaunch_runs impl_1 -to_step write_bitstream
+[Tue May 30 23:44:56 2023] Launched synth_1...
+Run output will be captured here: D:/PSN/animatie_VGA/animatie_VGA.runs/synth_1/runme.log
+[Tue May 30 23:44:56 2023] Launched impl_1...
+Run output will be captured here: D:/PSN/animatie_VGA/animatie_VGA.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.287 . Memory (MB): peak = 1570.590 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.289 . Memory (MB): peak = 1570.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1570.590 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:55 ; elapsed = 00:00:51 . Memory (MB): peak = 1678.391 ; gain = 974.730
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 30 23:52:38 2023...
